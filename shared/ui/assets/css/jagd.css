@@ -1,0 +1,126 @@
+/* ============================================================
+   Jagd-Verwaltung: Eigenes CSS
+   Naturtöne: Waldgrün, Braun, Beige
+   ============================================================ */
+
+/* Farbpalette */
+:root {
+    --jagd-gruen:        #3d6b3f;
+    --jagd-gruen-dunkel: #2a4d2c;
+    --jagd-gruen-hell:   #e8f0e8;
+    --jagd-braun:        #7a5c3a;
+    --jagd-braun-hell:   #f5f0e8;
+    --jagd-beige:        #f0ebe0;
+}
+
+/* Navbar */
+.jagd-navbar {
+    background-color: var(--jagd-gruen-dunkel);
+}
+.jagd-navbar .navbar-brand {
+    letter-spacing: 0.03em;
+}
+.jagd-navbar .nav-link.active {
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.12);
+    border-radius: 6px;
+}
+
+/* Texthilfe */
+.text-jagd { color: var(--jagd-gruen); }
+
+/* Hauptbutton */
+.btn-jagd {
+    background-color: var(--jagd-gruen);
+    border-color:     var(--jagd-gruen);
+    color: #fff;
+}
+.btn-jagd:hover {
+    background-color: var(--jagd-gruen-dunkel);
+    border-color:     var(--jagd-gruen-dunkel);
+    color: #fff;
+}
+
+/* KPI-Karten (Dashboard) */
+.kpi-card {
+    border-left: 4px solid var(--jagd-gruen) !important;
+    transition: transform .15s;
+}
+.kpi-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Widget-Karten */
+.card {
+    border-radius: 10px;
+}
+.card-header {
+    font-size: .95rem;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* DataTables Übersteuerungen */
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: .3rem .6rem;
+}
+.dataTables_wrapper .dataTables_length select {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: .2rem .4rem;
+}
+
+/* Karten-Container */
+.jagd-karte {
+    height: 480px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+/* Login-Seite */
+.login-card {
+    max-width: 380px;
+    margin: 8vh auto;
+}
+.login-card .card {
+    border: none;
+    box-shadow: 0 4px 24px rgba(0,0,0,.15);
+}
+.login-logo {
+    font-size: 2.5rem;
+    color: var(--jagd-gruen);
+}
+
+/* Ablauf-Ampel (Behörden) */
+.ablauf-ampel-rot    { border-left: 4px solid #dc3545 !important; }
+.ablauf-ampel-gelb   { border-left: 4px solid #ffc107 !important; }
+.ablauf-ampel-gruen  { border-left: 4px solid #198754 !important; }
+
+/* Mobile Optimierungen */
+@media (max-width: 767px) {
+    .jagd-karte {
+        height: 320px;
+    }
+    h1.h4 {
+        font-size: 1.1rem;
+    }
+    .kpi-card .fs-4 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Footer */
+.footer {
+    font-size: .82rem;
+}
+
+/* Wartungsprotokoll Timeline */
+.wartung-item {
+    border-left: 3px solid var(--jagd-gruen);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.wartung-item:last-child {
+    border-left-color: #dee2e6;
+}

@@ -1,0 +1,9 @@
+# Lokale Zugangsdaten (Passwort)
+shared/config/database.local.php
+
+# Uploads
+/uploads/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db

@@ -70,18 +70,18 @@
                     </ul>
                 </li>
 
-                <!-- Wildbret (externes Modul) -->
+                <!-- Wildbret-Modul -->
                 <li class="nav-item">
-                    <a class="nav-link" href="http://localhost:8080/" target="_blank">
+                    <a class="nav-link <?= ($activePage ?? '') === 'wildbret' ? 'active' : '' ?>"
+                       href="/modules/wildbret/">
                         <i class="fas fa-drumstick-bite me-1"></i>Wildbret
-                        <i class="fas fa-external-link-alt ms-1 small"></i>
                     </a>
                 </li>
 
-                <!-- Wildaufnahmen (externes Modul) -->
+                <!-- Wildaufnahmen (Flask-App, separater Port) -->
                 <li class="nav-item">
                     <a class="nav-link" href="http://localhost:5001" target="_blank">
-                        <i class="fas fa-camera me-1"></i>Wildaufnahmen
+                        <i class="fas fa-camera me-1"></i>Sortierung
                         <i class="fas fa-external-link-alt ms-1 small"></i>
                     </a>
                 </li>

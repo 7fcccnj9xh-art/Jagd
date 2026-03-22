@@ -12,7 +12,7 @@ if (file_exists($_localDb)) {
 
 // Standardwerte – werden nur gesetzt wenn database.local.php sie nicht definiert hat
 defined('DB_HOST')    || define('DB_HOST',    '192.168.0.101');
-defined('DB_PORT')    || define('DB_PORT',    '42763');
+defined('DB_PORT')    || define('DB_PORT',    '3306');
 defined('DB_USER')    || define('DB_USER',    'root');
 defined('DB_PASS')    || define('DB_PASS',    '');
 defined('DB_NAME')    || define('DB_NAME',    'jagd');

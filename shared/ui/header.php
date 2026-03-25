@@ -71,11 +71,39 @@
                 </li>
 
                 <!-- Wildbret-Modul -->
-                <li class="nav-item">
-                    <a class="nav-link <?= ($activePage ?? '') === 'wildbret' ? 'active' : '' ?>"
-                       href="/modules/wildbret/">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle <?= in_array($activePage ?? '', ['wildbret','erlegte','zerlegte','abgaben']) ? 'active' : '' ?>"
+                       href="#" role="button" data-bs-toggle="dropdown">
                         <i class="fas fa-drumstick-bite me-1"></i>Wildbret
                     </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="/modules/wildbret/dashboard.php">
+                                <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/modules/wildbret/erlegte_stuecke.php">
+                                <i class="fas fa-paw me-2"></i>Erlegte Stücke
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/modules/wildbret/zerlegte_teile.php">
+                                <i class="fas fa-cut me-2"></i>Zerlegte Teile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="/modules/wildbret/abgaben.php">
+                                <i class="fas fa-handshake me-2"></i>Abgaben
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="/modules/wildbret/api/export.php?type=html" target="_blank">
+                                <i class="fas fa-store me-2"></i>Vermarktungsliste
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
                 <!-- Wildaufnahmen (Flask-App, separater Port) -->

@@ -90,4 +90,7 @@ Jagd/
 | 2026-03-15 | Projektstruktur angelegt, schema_jagd.sql erstellt |
 | 2026-03-15 | Grundgerüst: shared/auth, shared/config, shared/ui |
 | 2026-03-15 | Login, Dashboard, Reviermanagement-Module (Gerüst) |
-| 2026-03-15 | Wildbret via Symlink integriert, ein gemeinsamer Server |
+| 2026-03-15 | Wildbret via Symlink integriert, ein gemeinsamer Server auf Port 8090 |
+| 2026-03-26 | SSO: Wildbret und Jagd teilen Session (jagd_session) und Benutzertabelle (jagd.users) |
+| 2026-03-26 | Rücksprung-Links: Wildbret → Jagd, Wildaufnahmen-Sortierer → Jagd |
+| 2026-03-26 | Wildbret-Dropdown in Jagd-Navbar: Erlegte Stücke, Zerlegte Teile, Abgaben, Vermarktung |

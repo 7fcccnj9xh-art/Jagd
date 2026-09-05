@@ -7,3 +7,6 @@ shared/config/database.local.php
 # Betriebssystem
 .DS_Store
 Thumbs.db
+
+# Nachfolge-Repo (eigenes Git-Repository, siehe github.com/7fcccnj9xh-art/jagd-oekosystem)
+jagd-neu/
